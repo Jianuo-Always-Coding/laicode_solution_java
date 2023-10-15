@@ -52,6 +52,8 @@ public class Stack {
 
 ### [Stack with min()](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/DequeAndQueue/StackWithMin.java)
 
+### [Stack by a Queue](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/DequeAndQueue/StackByQueue.java)
+
 ## Queue (Practice 6)
 
 ```java
@@ -96,3 +98,7 @@ public boolean isEmpty() {
     return in.isEmpty() && out.isEmpty();
 }
 ```
+
+## Deque
+
+### [Implement a Deque By Three Stacks](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/DequeAndQueue/DequeByThreeStacks.java)
