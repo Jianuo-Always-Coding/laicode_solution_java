@@ -6,7 +6,8 @@
 
 // You do not need to implement the Dictionary interface.
 // You can use it directly, the implementation is provided when testing your solution.
-public class Solution {
+
+public class SearchedInUnknowSizedSortedArray {
     public int search(Dictionary dict, int target) {
         // first search area, then search in the area
         int left = 0;

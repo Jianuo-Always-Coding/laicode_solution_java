@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RainbowSort {
     public int[] rainbowSort(int[] array) {
         // Write your solution here

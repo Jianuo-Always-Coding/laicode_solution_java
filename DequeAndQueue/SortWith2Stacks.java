@@ -1,3 +1,7 @@
+package DequeAndQueue;
+
+import java.util.*;
+
 public class SortWith2Stacks {
     public void sort(LinkedList<Integer> s1) {
         LinkedList<Integer> s2 = new LinkedList<Integer>();

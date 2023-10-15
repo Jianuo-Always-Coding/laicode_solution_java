@@ -27,3 +27,5 @@ The key point of this part including
 # [Recursion](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/Recursion/)
 
 This part contains some problems which can be solved with recursion, including some sort algorithms, such as **Selection Sort, Merge Sort** and **Quick Sort**. Notably, tail recursion can be converted into iteration.
+
+# [DequeAndQueue](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/DequeAndQueue/)

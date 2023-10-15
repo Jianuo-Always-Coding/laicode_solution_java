@@ -1,4 +1,4 @@
-package OOD;
+package DequeAndQueue;
 
 import java.util.*;
 
