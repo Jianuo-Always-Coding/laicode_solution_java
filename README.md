@@ -34,9 +34,10 @@ This part contains some problems which can be solved with recursion, including s
 
 Complete the solution with Stack, Queue and Deque, including some Object-oriented Design for Stack, Queue and Deque.
 
-# Binary Tree and Binary Search Tree
-> - A **binary tree** is a tree which at most has 2 branches
-> - A **balanced binary tree** is a tree that the difference height of left tree and right tree is less or equal to 1.
-> - A **complete binary tree** is a tree that only the last layer has null value, and no number after null.
+# [Binary Tree and Binary Search Tree](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/BinaryTreeAndBinarySearchTree/)
 
-> - A **binary Search tree** is a tree like binary search. All the nodes in the left tree are smaller than root, and all the nodes in the right tree are greater than root.
+- A **binary tree** is a tree which at most has 2 branches
+- A **balanced binary tree** is a tree that the difference height of left tree and right tree is less or equal to 1.
+- A **complete binary tree** is a tree that only the last layer has null value, and no number after null.
+
+- A **binary Search tree** is a tree like binary search. All the nodes in the left tree are smaller than root, and all the nodes in the right tree are greater than root.
