@@ -17,8 +17,18 @@ return cur;
 
 Poll from a stack, and offer right child into the stack,then offer left child into the stack. (弹栈打印，右进去左进去)
 
-## Implement an iterative, in-order traversal of a given binary tree, return the list of keys of each node in the tree as it is in-order traversed.
+## In-order Traversal Of Binary Tree (iterative)
 
 Poll a node from the stack. And put its right child into the stack. As long as you put a TreeNode into the stack, you should also put its all leftNode into the stack.
 
 先把 root 和他所有的左子节点放进去，每次弹栈一个，并加入 result，如果这个节点有右子树，把右子树和所有右子树的所有左节点也加进去。
+
+## <mark style="background-color : Yellow"> Post-order Traversal Of Binary Tree (iterative) </mark>
+
+We use prev and cur to record the path state. First, put root into the stack. When start node or from root to child, peek the first node, if have left add left. No left node ,if have right node add right. (You can consider, every time when peekFirst, it is a new tree.) if no left and no right, add result and return.
+
+If from left, add right.
+
+If from right, add right.
+
+Importantly, we need to move prev to cur every time.
