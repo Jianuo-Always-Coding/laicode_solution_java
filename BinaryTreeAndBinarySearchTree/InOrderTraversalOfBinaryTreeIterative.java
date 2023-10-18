@@ -22,31 +22,19 @@ public class InOrderTraversalOfBinaryTreeIterative {
             return result;
         }
         Deque<TreeNode> stack = new ArrayDeque<>();
-        stack.offerFirst(root);
-        TreeNode cur = root.left;
-        while (cur != null) {
-            stack.offerFirst(cur);
-            cur = cur.left;
-        }
-
-        while (!stack.isEmpty()) {
-            cur = stack.pollFirst();
-            result.add(cur.key);
-
-            if (cur.right != null) {
-                stack.offerFirst(cur.right);
-                if (cur.right.left != null) {
-                    cur = cur.right.left;
-                    while (cur != null) {
-                        stack.offerFirst(cur);
-                        cur = cur.left;
-                    }
-                }
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) {
+                stack.offerFirst(cur);
+                cur = cur.left;
+            } else {
+                cur = stack.pollFirst();
+                result.add(cur.key);
+                cur = cur.right;
             }
         }
         return result;
     }
 }
-
 // TC : O(n)
 // SC : O(1)

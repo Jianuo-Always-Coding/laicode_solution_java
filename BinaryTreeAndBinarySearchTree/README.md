@@ -21,7 +21,8 @@ Poll from a stack, and offer right child into the stack,then offer left child in
 
 Poll a node from the stack. And put its right child into the stack. As long as you put a TreeNode into the stack, you should also put its all leftNode into the stack.
 
-先把 root 和他所有的左子节点放进去，每次弹栈一个，并加入 result，如果这个节点有右子树，把右子树和所有右子树的所有左节点也加进去。
+有左往左走，没左弹栈打印往右走。
+while(cur != null || stack.isEmpty())
 
 ## <mark style="background-color : Yellow"> Post-order Traversal Of Binary Tree (iterative) </mark>
 
