@@ -41,3 +41,6 @@ Complete the solution with Stack, Queue and Deque, including some Object-oriente
 - A **complete binary tree** is a tree that only the last layer has null value, and no number after null.
 
 - A **binary Search tree** is a tree like binary search. All the nodes in the left tree are smaller than root, and all the nodes in the right tree are greater than root.
+
+# [Graph Search I BFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/GraphSearchIBFS/)
+For Binary tree's level order traversal.
