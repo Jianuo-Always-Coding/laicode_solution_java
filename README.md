@@ -61,3 +61,27 @@ while (!queue.isEmpty()) {
     result.add(layer);
 }
 ```
+
+# [Heap & TopK](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/BinaryHeap&TopK/)
+
+1. Create a PriorityQueue -- Max heap
+```java
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>(k, Collections.reverseOrder()));
+```
+
+```java
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>() {
+      @Override
+      public int compare(Integer o1, Integer o2) {
+        if(o1.equals(o2)) {
+          return 0;
+        }
+        return o1 > o2 ? -1 : 1;
+      }
+    });
+```
+2. Review this section, do **Top k Frequent Words** and **Kth Closest Point To <0,0,0>**.
+3. useful API
+```java
+List<Integer> n = Arrays.asList(0, 0, 0);
+```
