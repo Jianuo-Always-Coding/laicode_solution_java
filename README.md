@@ -95,7 +95,6 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>(
 ```java
 List<Integer> n = Arrays.asList(0, 0, 0);
 ```
-
 # [Graph Search II : DFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/Graph%20Search%20II%20%3A%20DFS)
 
 
