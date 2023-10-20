@@ -43,7 +43,9 @@ Complete the solution with Stack, Queue and Deque, including some Object-oriente
 - A **binary Search tree** is a tree like binary search. All the nodes in the left tree are smaller than root, and all the nodes in the right tree are greater than root.
 
 # [Graph Search I BFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/GraphSearchIBFS/)
+
 For Binary tree's level order traversal.
+
 ```java
 while (!queue.isEmpty()) {
     List<Integer> layer = new ArrayList<>();
@@ -65,6 +67,7 @@ while (!queue.isEmpty()) {
 # [Heap & TopK](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/BinaryHeap&TopK/)
 
 1. Create a PriorityQueue -- Max heap
+
 ```java
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>(k, Collections.reverseOrder()));
 ```
@@ -80,9 +83,41 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>(
       }
     });
 ```
-2. Review this section, do **Top k Frequent Words** and **Kth Closest Point To <0,0,0>**.
-3. useful API
+
+2. percolateUp & percolateDown
+
+   n is the size of the minHeap / maxHeap
+   - percolateUp & percolateDown TC : O(logn)
+   - Heapify TC : O(n)
+3. Review this section, do **Top k Frequent Words** and **Kth Closest Point To <0,0,0>**.
+4. useful API
+
 ```java
 List<Integer> n = Arrays.asList(0, 0, 0);
 ```
-# [Graph Search II : DFS]
+
+# [Graph Search II : DFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/Graph%20Search%20II%20%3A%20DFS)
+
+
+Array = [1,2,3,4]
+
+**SubSet** : [1,3,2] 
+- is not continous and does not maintain relative order of elements (子集，不保持相对顺序也不连续)
+
+**SubSequence** ： [1,2,4] 
+- is not continous but maintains relative order of elements（子序列，不连续但是保持相对顺序）
+
+**SubArray** ： [1,2],[1,2,3] 
+- is continous and maintains relative order of elements（子数组，保持相对顺序并连续）
+
+#
+
+Array = [1,2,3,4]
+
+**Combination** : {{}, {1}, {2}, ...., {3,4}, ...}
+- Can not add , no order
+- (组合， 可以不加， 没有顺序)
+
+**Permutation** : {{1,2,3,4}, {1,2,4,3}, ...}
+- All the elements must in, must add all, have order. 
+- (排列 ， 不能不加， 有顺序)
