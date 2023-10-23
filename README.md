@@ -120,3 +120,15 @@ Array = [1,2,3,4]
 **Permutation** : {{1,2,3,4}, {1,2,4,3}, ...}
 - All the elements must in, must add all, have order. 
 - (排列 ， 不能不加， 有顺序)
+
+# HashTable and String
+## Useful APIS
+```java
+set.add(e);
+set.contains(e);
+```
+
+# [HashTable and String I](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/HashTable_and_String_I)
+
+> For String -> toCharArray(), we can assume the **Time Complexity** is O(1).
+
