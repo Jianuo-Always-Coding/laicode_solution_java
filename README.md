@@ -87,26 +87,31 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>(
 2. percolateUp & percolateDown
 
    n is the size of the minHeap / maxHeap
+
    - percolateUp & percolateDown TC : O(logn)
    - Heapify TC : O(n)
+
 3. Review this section, do **Top k Frequent Words** and **Kth Closest Point To <0,0,0>**.
 4. useful API
 
 ```java
 List<Integer> n = Arrays.asList(0, 0, 0);
 ```
-# [Graph Search II : DFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/Graph%20Search%20II%20%3A%20DFS)
 
+# [Graph Search II : DFS](https://github.com/Jianuo-Always-Coding/laicode_solution_java/tree/main/Graph%20Search%20II%20%3A%20DFS)
 
 Array = [1,2,3,4]
 
-**SubSet** : [1,3,2] 
+**SubSet** : [1,3,2]
+
 - is not continous and does not maintain relative order of elements (子集，不保持相对顺序也不连续)
 
-**SubSequence** ： [1,2,4] 
+**SubSequence** ： [1,2,4]
+
 - is not continous but maintains relative order of elements（子序列，不连续但是保持相对顺序）
 
-**SubArray** ： [1,2],[1,2,3] 
+**SubArray** ： [1,2],[1,2,3]
+
 - is continous and maintains relative order of elements（子数组，保持相对顺序并连续）
 
 #
@@ -114,15 +119,19 @@ Array = [1,2,3,4]
 Array = [1,2,3,4]
 
 **Combination** : {{}, {1}, {2}, ...., {3,4}, ...}
+
 - Can not add , no order
 - (组合， 可以不加， 没有顺序)
 
 **Permutation** : {{1,2,3,4}, {1,2,4,3}, ...}
-- All the elements must in, must add all, have order. 
+
+- All the elements must in, must add all, have order.
 - (排列 ， 不能不加， 有顺序)
 
 # HashTable and String
+
 ## Useful APIS
+
 ```java
 set.add(e);
 set.contains(e);
@@ -132,3 +141,23 @@ set.contains(e);
 
 > For String -> toCharArray(), we can assume the **Time Complexity** is O(1).
 
+# String II
+
+Review **All Anagrams** to strength this section.
+
+> Remove template code
+```java
+Set<Character> set = new HashSet<>();
+int start = 0;
+int longest = 0;
+for (int i = 0; i < input.length(); i++) {
+    char cur = input.charAt(i);
+    if (!set.add(cur)) {
+    while (input.charAt(start) != cur) {
+        set.remove(input.charAt(start++));
+    }
+    start++;
+    }
+    longest = Math.max(longest, set.size());
+}
+```
