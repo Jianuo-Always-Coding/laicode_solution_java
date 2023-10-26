@@ -161,3 +161,7 @@ for (int i = 0; i < input.length(); i++) {
     longest = Math.max(longest, set.size());
 }
 ```
+
+# Recursion II
+## N Queens
+> Time complexity review
