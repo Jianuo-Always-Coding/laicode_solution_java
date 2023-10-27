@@ -1,6 +1,6 @@
 # Dynamic Programming
 
-## Array Hopper I & II
+## Array Hopper I & II & III
 
 > We need to consider the boundry, because the jump step may out of the array.
 
@@ -12,3 +12,6 @@
 String s = "abcdefg";
 s.substring(0,2); // "ab"
 ```
+## Largest SubMatrix Sum
+
+> Use a colSum to record all the sum elements for column.
