@@ -1,7 +1,8 @@
-package Recursion II;
+package Review and Strengthen;
 
 /**
- * Given a string with possible duplicate characters, return a list with all permutations of the characters.
+ * Given a string with possible duplicate characters, 
+ * return a list with all permutations of the characters.
  */
 public class Solution {
   public List<String> permutations(String input) {

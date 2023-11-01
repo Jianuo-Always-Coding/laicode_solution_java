@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "laicode_solution_java_367b985d"
+    },
+    {
+      "name": "Gothic Starter",
+      "type": "gothicStarter",
+      "request": "launch",
+      "vscCommand": "vscode-gothiconline.launch"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-package Recursion II;
+package Review and Strengthen;
 
 public class Solution {
   public void rotate(int[][] matrix) {
@@ -27,4 +27,3 @@ public class Solution {
 
 //TC : O(n^2)
 //SC : O(1)
-

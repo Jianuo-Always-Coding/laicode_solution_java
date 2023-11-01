@@ -43,3 +43,5 @@ return prev;
 > If all GraphNode's neighbor nodes are suit the requirement, then we said the graph is bipartite.
 
 > If we can't find this node in map, we put it into queue, and find its neighbor nodes. If we can find, just judge.
+
+> map中没有，加标签放到map中，再放到Queue中。

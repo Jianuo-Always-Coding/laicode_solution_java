@@ -1,4 +1,15 @@
-package Recursion II;
+package Review and Strengthen;
+
+/*
+ * Given an array of elements, reorder it as follow:
+
+ * { N1, N2, N3, …, N2k } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k }
+
+ * { N1, N2, N3, …, N2k+1 } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k, N2k+1 }
+
+ * Try to do it in place.
+ * 
+ */
 
 public class Solution {
   public int[] reorder(int[] array) {
