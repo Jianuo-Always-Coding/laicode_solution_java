@@ -6,6 +6,7 @@
 > - [Largest Number Smaller In Binary Search Tree](#Largest-Number-Smaller-Than-Target)
 > - [2 SUM return boolean unsorted](#2SUM-Boolean)
 > - [2 SUM return pair unsorted](#2Sum-Pair)
+> - [2 SUM return pair of values unsorted](#2Sum-Pair-Values)
 
 <mark> When create a new Node, you must put that in a map pair.</mark>
 
@@ -139,11 +140,21 @@ We can use 2 pointers.
 > - Use a **Map** to record the pair of (value, list of index).
 > > - Find whether the rest value is in map, then add to map. **(Search first then add to set)**
 
-3. 
-## [2 SUM return pair of values](https://app.laicode.io/app/problem/182)
+<a id="2Sum-Pair-Values"></a>
 
+3. ### [2 SUM return pair of values](https://app.laicode.io/app/problem/182)
+
+> - Method 1: Use Arrays.sort(array);
+
+> - Method 2: Use a map to record (value, count). 
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_pair_of_values.java)
+> - count just be 0/1. If count = 1, means this number is added to result. If count = 0, means this number is not added to result.
+> - <mark>When added to result, both value and pairVal should update to 1.</mark>
+
+## 3 SUM
 > - Use a for loop, transfer 3 SUM to 2 SUM
 > - <mark>The for loop index i is the smallest index int the result, so the range of the rest 2 index should from i+1 to the end.</mark>
+> 
 
 
 
