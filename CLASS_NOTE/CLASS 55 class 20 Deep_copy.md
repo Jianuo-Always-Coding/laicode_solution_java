@@ -110,13 +110,15 @@ while (cur != null) {
 > - Overflow? value is large  
 > - **Optimise time or space**
 
+When do 3 SUN or 4 SUM, we need to notice **The index range**.
+
 
 ## 2 SUM
 
 ### SORTED - Use two pinters
-1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
+1. ### 2 SUM return boolean
 
-2. ### [2 SUM return pair](https://app.laicode.io/app/problem/181)
+2. ### 2 SUM return pair
 We can use 2 pointers.
 > - Duplicated:
 > > - Find the blocks of the same number
@@ -151,11 +153,14 @@ We can use 2 pointers.
 > - count just be 0/1. If count = 1, means this number is added to result. If count = 0, means this number is not added to result.
 > - <mark>When added to result, both value and pairVal should update to 1.</mark>
 
-## 3 SUM
+## [3 SUM return pair of values](https://app.laicode.io/app/problem/186)
 > - Use a for loop, transfer 3 SUM to 2 SUM
 > - <mark>The for loop index i is the smallest index int the result, so the range of the rest 2 index should from i+1 to the end.</mark>
-> 
 
+
+## [4 SUM return boolean](https://app.laicode.io/app/problem/188)
+> - Use a map to store (sum, (index1, index2)). sum = array[index1] + array[index2].
+> - If there are the same sum result of different pair of index, we just remain the smallest index of each.
 
 
 
