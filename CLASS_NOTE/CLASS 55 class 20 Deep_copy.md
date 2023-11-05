@@ -1,16 +1,32 @@
 # DEEP COPY
 
+> - [Deep Copy Linked List With Random Pointer](#Deep-Copy-Linked-List-With-Random-Pointer)
+> - [Deep Copy Undirected Graph](#Deep-Copy-Undirected-Graph)
+> - [Find a node whose value is cloest to the target value](#Cloest-Value)
+> - [Largest Number Smaller In Binary Search Tree](#Largest-Number-Smaller-Than-Target)
+> - [2 SUM return boolean unsorted](#2SUM-Boolean)
+> - [2 SUM return pair unsorted](#2Sum-Pair)
+
 <mark> When create a new Node, you must put that in a map pair.</mark>
+
+
+
+
+<a id="Deep-Copy-Linked-List-With-Random-Pointer"></a>
+
 ## [Deep Copy Linked List With Random Pointer](https://app.laicode.io/app/problem/131)
 
-> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION/deep_copy_randomList.java)
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/deep_copy_randomList.java)
 
+
+
+
+
+<a id="Deep-Copy-Undirected-Graph"></a>
 
 ## [Deep Copy Undirected Graph](https://app.laicode.io/app/problem/132)
 
-
-
-> - [SOLUTION BFS ITERATION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION/deep_copy_graph_BFS.java)
+> - [SOLUTION BFS ITERATION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/deep_copy_graph_BFS.java)
 > - All the node in the map is just a pair, not totally equal. We should update the neighbor in the loop of each graphnode.
 
 > - [SOLUTION DFS RECURSION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION/deep_copy_graph_DFS.java)
@@ -37,9 +53,17 @@ private GraphNode helper(GraphNode node, Map<GraphNode, GraphNode> map) {
         return newNode;
     } 
 ```
+
+
 # Binary Search Tree
+
+<a id="Cloest-Value"></a>
+
 ## [Find a node whose value is cloest to the target value](https://app.laicode.io/app/problem/135)
-> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION/Closest_Number_In_Binary_Search_Tree.java)
+
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/Closest_Number_In_Binary_Search_Tree.java)
+> - First, judge whether the root can be put into the result. In this case root maybe a valued result ,so we initialized reuslt = root.key.
+> - If equal we return, else we update result and go down to find.
 ```java
 while (cur != null) {
     if (cur.key == target) {
@@ -57,3 +81,70 @@ while (cur != null) {
     }
 }
 ```
+
+
+<a id="Largest-Number-Smaller-Than-Target"></a>
+
+## [Largest Number Smaller In Binary Search Tree](https://app.laicode.io/app/problem/136)
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/Largest_Number_Smaller_In_Binary_Search_Tree.java)
+> - As long as we can find a node less than target, we need to update.
+```java
+while (cur != null) {
+    if (cur.key < target) {
+        result = cur.key;
+        cur = cur.right;
+    } else {
+        cur = cur.left;
+    }
+}
+```
+# 2, 3, 4 SUM
+
+<mark>NOT ONLY THE SOLUTION, CLARIFY IS MORE IMPORTANT.</mark>
+
+> - **Order : ascending or decending or unsorted**
+> - **Return : True or False / Pair**
+> - Duplated or not
+> - 1 TB?
+> - Overflow? value is large  
+> - **Optimise time or space**
+
+
+## 2 SUM
+
+### SORTED - Use two pinters
+1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
+
+2. ### [2 SUM return pair](https://app.laicode.io/app/problem/181)
+We can use 2 pointers.
+> - Duplicated:
+> > - Find the blocks of the same number
+> > - Compare the sum with target.
+> > - Then add to reuslt.
+
+<a id="2SUM-Boolean"></a>
+
+### UNSORTED
+1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_boolean.java)
+> - Use a **Set** to record the numbers which has already seen.
+> - Find whether the rest value is in set, then add to set. **(Search first then add to set)**
+
+
+<a id="2Sum-Pair"></a>
+
+2. ### [2 SUM return pair of index](https://app.laicode.io/app/problem/181)
+
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_pair.java)
+> - Use a **Map** to record the pair of (value, list of index).
+> > - Find whether the rest value is in map, then add to map. **(Search first then add to set)**
+
+3. 
+## [2 SUM return pair of values](https://app.laicode.io/app/problem/182)
+
+> - Use a for loop, transfer 3 SUM to 2 SUM
+> - <mark>The for loop index i is the smallest index int the result, so the range of the rest 2 index should from i+1 to the end.</mark>
+
+
+
+
