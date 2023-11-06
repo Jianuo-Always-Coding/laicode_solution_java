@@ -10,18 +10,11 @@
 
 <mark> When create a new Node, you must put that in a map pair.</mark>
 
-
-
-
 <a id="Deep-Copy-Linked-List-With-Random-Pointer"></a>
 
 ## [Deep Copy Linked List With Random Pointer](https://app.laicode.io/app/problem/131)
 
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/deep_copy_randomList.java)
-
-
-
-
 
 <a id="Deep-Copy-Undirected-Graph"></a>
 
@@ -34,6 +27,7 @@
 > - The input of the recursion function is (node_need_copied, map), and the output of the recursion function is the copied node.
 > - As well as the node is put into map, the node is totally copied, the same with it's neighbors.
 > - <mark>The recursion function is return a totally copied node.</mark>
+
 ```java
 // DFS solution -- recursion function
 private GraphNode helper(GraphNode node, Map<GraphNode, GraphNode> map) {
@@ -52,9 +46,8 @@ private GraphNode helper(GraphNode node, Map<GraphNode, GraphNode> map) {
             newNode.neighbors.add(helper(nei, map));
         }
         return newNode;
-    } 
+    }
 ```
-
 
 # Binary Search Tree
 
@@ -65,6 +58,7 @@ private GraphNode helper(GraphNode node, Map<GraphNode, GraphNode> map) {
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/Closest_Number_In_Binary_Search_Tree.java)
 > - First, judge whether the root can be put into the result. In this case root maybe a valued result ,so we initialized reuslt = root.key.
 > - If equal we return, else we update result and go down to find.
+
 ```java
 while (cur != null) {
     if (cur.key == target) {
@@ -83,12 +77,13 @@ while (cur != null) {
 }
 ```
 
-
 <a id="Largest-Number-Smaller-Than-Target"></a>
 
 ## [Largest Number Smaller In Binary Search Tree](https://app.laicode.io/app/problem/136)
+
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/Largest_Number_Smaller_In_Binary_Search_Tree.java)
 > - As long as we can find a node less than target, we need to update.
+
 ```java
 while (cur != null) {
     if (cur.key < target) {
@@ -99,6 +94,7 @@ while (cur != null) {
     }
 }
 ```
+
 # 2, 3, 4 SUM
 
 <mark>NOT ONLY THE SOLUTION, CLARIFY IS MORE IMPORTANT.</mark>
@@ -107,32 +103,32 @@ while (cur != null) {
 > - **Return : True or False / Pair**
 > - Duplated or not
 > - 1 TB?
-> - Overflow? value is large  
+> - Overflow? value is large
 > - **Optimise time or space**
 
 When do 3 SUN or 4 SUM, we need to notice **The index range**.
 
-
 ## 2 SUM
 
 ### SORTED - Use two pinters
+
 1. ### 2 SUM return boolean
 
 2. ### 2 SUM return pair
-We can use 2 pointers.
-> - Duplicated:
-> > - Find the blocks of the same number
-> > - Compare the sum with target.
-> > - Then add to reuslt.
+   We can use 2 pointers.
+   > - Duplicated:
+   >   > - Find the blocks of the same number
+   >   > - Compare the sum with target.
+   >   > - Then add to reuslt.
 
 <a id="2SUM-Boolean"></a>
 
 ### UNSORTED
-1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
-> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_boolean.java)
-> - Use a **Set** to record the numbers which has already seen.
-> - Find whether the rest value is in set, then add to set. **(Search first then add to set)**
 
+1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
+   > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_boolean.java)
+   > - Use a **Set** to record the numbers which has already seen.
+   > - Find whether the rest value is in set, then add to set. **(Search first then add to set)**
 
 <a id="2Sum-Pair"></a>
 
@@ -140,7 +136,7 @@ We can use 2 pointers.
 
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_pair.java)
 > - Use a **Map** to record the pair of (value, list of index).
-> > - Find whether the rest value is in map, then add to map. **(Search first then add to set)**
+>   > - Find whether the rest value is in map, then add to map. **(Search first then add to set)**
 
 <a id="2Sum-Pair-Values"></a>
 
@@ -148,19 +144,20 @@ We can use 2 pointers.
 
 > - Method 1: Use Arrays.sort(array);
 
-> - Method 2: Use a map to record (value, count). 
+> - Method 2: Use a map to record (value, count).
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_pair_of_values.java)
 > - count just be 0/1. If count = 1, means this number is added to result. If count = 0, means this number is not added to result.
 > - <mark>When added to result, both value and pairVal should update to 1.</mark>
 
 ## [3 SUM return pair of values](https://app.laicode.io/app/problem/186)
-> - Use a for loop, transfer 3 SUM to 2 SUM
-> - <mark>The for loop index i is the smallest index int the result, so the range of the rest 2 index should from i+1 to the end.</mark>
 
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/3SUM.java)
+> - Use a for loop, transfer 3 SUM to 2 SUM
+> - Sorted first. (Arrays.sort(array);)
+> - <mark>The for loop index i is the smallest index int the result, so the range of the rest 2 index should from i+1 to the end.</mark>
+> - Jumped duplicated number.
 
 ## [4 SUM return boolean](https://app.laicode.io/app/problem/188)
-> - Use a map to store (sum, (index1, index2)). sum = array[index1] + array[index2].
-> - If there are the same sum result of different pair of index, we just remain the smallest index of each.
 
-
-
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/4_sum.java)
+> - Two for loop and two pointers.
