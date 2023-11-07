@@ -23,8 +23,12 @@
 
 ## 直上直下路径
 
-### Max Sum from leaf to root
+<mark>当从root 到 leaf的时候需要特别注意，因为一旦root == null return0的时候，左边为null = 0，右边为负数，则就会舍弃右边，但此时左边是0，不满足从root 到 leaf的条件</mark>
 
+### [Max Sum from leaf to root](https://app.laicode.io/app/problem/639?plan=3)
+
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/Max_Path_Sum_From_Leaf_To_Root.java)
+> - <mark>注意左或右为空的时候直接返回另一半</mark>
 > - 类似 DFS，在 leaf node 更新 globalMax。
 > - 去左，去右，遍历整棵树。
 
@@ -34,14 +38,15 @@
 > - 类似 prefixSum 的思想，
 > - 注意要在 recursion function 的最后，判断加进去的 sum 是否需要 move（保证去右的时候，没有左的 sum）
 
-### Max Sum from any node to any（直上直下）
+### [Max Sum from any node to any（直上直下）](https://app.laicode.io/app/problem/140?plan=3)
 
-> - DP + recursion
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/Max_Sum_from_any_node_to_any_straight.java)
 
 ## Tree serialization problem -> Reshape
 
-### Given a binary tree, fatten it to a linked list
+### [Given a binary tree, fatten it to a linked list](https://app.laicode.io/app/problem/523?plan=3)
 
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/flatten_tree_to_linkedList.java)
 > - pre-order only have right child
 > - Use a prev[0] to record prev;
 > - root.left = null;
@@ -62,11 +67,16 @@
 
 Use a map to store the value position of in-order
 
-### pre-order and in-order
+### [pre-order and in-order](https://app.laicode.io/app/problem/213?plan=3)
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/Reconstruct_Binary_Tree_With_Preorder_And_Inorder.java)
 
-### post-order and in-order
 
-### level-order and in-order
+### [post-order for Binary Search Tree](https://app.laicode.io/app/problem/211)
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/postOrder_for_Binary_Search_Tree.java)
+
+### [level-order and in-order](https://app.laicode.io/app/problem/215)
+
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/Level_order_and_in_Order_for_Tree.java)
 
 > - 每次要把 level-order 的第 0 号元素删除 leverOrder.remove(0);
 > - 通过 root.value 在 in-order 中的 index，判断是在左子树还是在右子树
