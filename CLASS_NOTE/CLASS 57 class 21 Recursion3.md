@@ -23,7 +23,7 @@
 
 ## 直上直下路径
 
-<mark>当从root 到 leaf的时候需要特别注意，因为一旦root == null return0的时候，左边为null = 0，右边为负数，则就会舍弃右边，但此时左边是0，不满足从root 到 leaf的条件</mark>
+<mark>当从 root 到 leaf 的时候需要特别注意，因为一旦 root == null return0 的时候，左边为 null = 0，右边为负数，则就会舍弃右边，但此时左边是 0，不满足从 root 到 leaf 的条件</mark>
 
 ### [Max Sum from leaf to root](https://app.laicode.io/app/problem/639?plan=3)
 
@@ -68,10 +68,11 @@
 Use a map to store the value position of in-order
 
 ### [pre-order and in-order](https://app.laicode.io/app/problem/213?plan=3)
+
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/Reconstruct_Binary_Tree_With_Preorder_And_Inorder.java)
 
-
 ### [post-order for Binary Search Tree](https://app.laicode.io/app/problem/211)
+
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_57/postOrder_for_Binary_Search_Tree.java)
 
 ### [level-order and in-order](https://app.laicode.io/app/problem/215)

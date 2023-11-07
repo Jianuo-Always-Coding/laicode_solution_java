@@ -116,19 +116,21 @@ When do 3 SUN or 4 SUM, we need to notice **The index range**.
 
 2. ### 2 SUM return pair
    We can use 2 pointers.
-   > - Duplicated:
-   >   > - Find the blocks of the same number
-   >   > - Compare the sum with target.
-   >   > - Then add to reuslt.
+   > Duplicated:
+   >
+   > 1. Find the blocks of the same number
+   > 2. Compare the sum with target.
+   > 3. Then add to reuslt.
 
 <a id="2SUM-Boolean"></a>
 
 ### UNSORTED
 
 1. ### [2 SUM return boolean](https://app.laicode.io/app/problem/180)
-   > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_boolean.java)
-   > - Use a **Set** to record the numbers which has already seen.
-   > - Find whether the rest value is in set, then add to set. **(Search first then add to set)**
+
+> - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_55/2_sum_boolean.java)
+> - Use a **Set** to record the numbers which has already seen.
+> - Find whether the rest value is in set, then add to set. **(Search first then add to set)**
 
 <a id="2Sum-Pair"></a>
 
