@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 注解扫描加在这里 -->
+    <context:component-scan base-package="com.qfedu.spring.pojo"></context:component-scan>
+    <bean name="car1" class="com.qfedu.spring.pojo.Car">
+        <property name="name" value="blue car"></property>
+        <property name="color" value="blue"></property>
+    </bean>
+    <bean name="car2" class="com.qfedu.spring.pojo.Car">
+        <property name="name" value="yello car"></property>
+        <property name="color" value="yello"></property>
+    </bean>
+</beans>
