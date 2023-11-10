@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BandWith",
+      "request": "launch",
+      "mainClass": "BandWith",
+      "projectName": "laicode_solution_java_367b985d"
+    },
+    {
+      "type": "java",
+      "name": "sumMod",
+      "request": "launch",
+      "mainClass": "sumMod",
+      "projectName": "laicode_solution_java_367b985d"
+    },
+    {
+      "type": "java",
       "name": "test",
       "request": "launch",
       "mainClass": "test",

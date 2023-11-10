@@ -19,6 +19,10 @@ Inverse of control. 通常我们需要一个对象的时候我们直接new一个
 - Proxy（代理）：一个类被 AOP 织入增强后，就产生一个结果代理类
 - Weaving（织入）：是指把增强应用到目标对象来创建新的代理对象的过程。spring采用动态代理织入，而AspectJ 采用编译期织入和类装载期织入
 
+### AOP开发
+详情见AOPTest README.md
+### AOP的注解开发方式
+详情见AOPTest Annotation_development.md
 ## Bean
 
 1. 在IOC中,我们用了bean的一个例子，bean的属性我们使用了name，也可以用id，区别在于：
