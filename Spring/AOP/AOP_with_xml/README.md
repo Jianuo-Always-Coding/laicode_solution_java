@@ -103,7 +103,7 @@ public class TransactionAdvice {
     <!--    将通知对象织入目标对象-->
     <aop:config>
         <!--   选择切入点     -->
-        <aop:pointcut id="pointcut" expression="execution(public void src.com.qfedu.spring.aop.service.UserServiceImpl.update())"/>
+        <aop:pointcut id="pointcut" expression="execution(* src.com.qfedu.spring.aop.service..*ServiceImpl.*(..))"/>
         <!--    引入通知对象    -->
         <aop:aspect ref="transactionAdvice">
             <aop:before method="before" pointcut-ref="pointcut"/>
