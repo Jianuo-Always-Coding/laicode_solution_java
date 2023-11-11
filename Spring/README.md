@@ -1,5 +1,9 @@
 # Spring
+- DAO : 接口（Object）
+- DAOImpl ： 实现接口，定义一些function， 使用jdbc连接数据库中的表， 并且使用jdbcTemplate管理，function中封装SQL操作使用jt.update()进行实现
 
+- Service : 接口（operation）
+- ServiceImpl ： 使用Resource注入DAO的entity，再对Object进行操作
 ## IOC:
 
 Inverse of control. 通常我们需要一个对象的时候我们直接 new 一个。在 Spring 中我们使用 XML 文件，在文件中定义 bean。
@@ -210,3 +214,7 @@ public Person(String name, Car car) {
 > - 依赖管理 dependencies
 > - 信息管理
 
+## Spring TransactionManager(事务管理)
+### DataSource TransactionManager - DataSource : DataSource
+### Hibernate TransactionManager - DataSource : SessionFactory
+### Jpc TransactionManager - DataSource : EntityManager

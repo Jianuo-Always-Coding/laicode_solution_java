@@ -1,5 +1,5 @@
 # JDBC
-
+简单来说，JDBC Template就是使用function将SQL操作进行封装，通过对方法的调用，进行对数据库中法数据的更改，在Dao层的implement中，只需要关注业务逻辑
 ## Steps
 
 1. 创建项目
