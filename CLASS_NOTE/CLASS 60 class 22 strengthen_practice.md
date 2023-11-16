@@ -94,14 +94,32 @@ static class Cell {
 ## [直方图下雨接水问题](https://app.laicode.io/app/problem/199)
 
 > [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_60/Max_Water_Trapped_I.java)
->
 > - 从左和右分别记录 leftMax 和 rightMax，
 > - 用两个指针相向而行，当一方 Maxvalue 小的时候，累加 Sum，并移动
 
 ## [2D 直方图下雨接水问题](https://app.laicode.io/app/problem/200)
 
 > [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_60/Max_Water_Trapped_II.java)
-
 > - 将一周的 node 都加入到 minHeap 中
 > - 用一个 boolean[][]记录 node 是否被访问过
 > - poll 出一个，将所有没访问的 neighbors 加入 minHeap 中
+## [查找一个list中有多少个点在一条直线上（斜率相等)](https://app.laicode.io/app/problem/216)
+> [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_60/Most_Points_On_A_Line.java)
+```java
+for (int i = 0; i < points.length; i++) {
+  // same 是list中有多少个node和第i个node一样，
+  // sameX和most是在一行或者不在一行中还有多少个node一样
+  // result 应该是 same + sameX / most
+  int same = 1, sameX = 0, most = 0;
+  Map<Double, Integer> map; // Double 为slope，integer为个数
+  for (int j = 0; j < points.length; j++) {
+    // 跳过相同的点
+    if (i == j) {
+      continue;
+    }
+    // update map
+  }
+  // for each i， update result
+}
+```
+
