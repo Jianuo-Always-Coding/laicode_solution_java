@@ -1,4 +1,6 @@
-# [K-smallest in 2 arrays -Binary Search](https://app.laicode.io/app/problem/202)
+# Class 64 class 23 加强练习 4
+
+## [K-smallest in 2 arrays -Binary Search](https://app.laicode.io/app/problem/202)
 
 > [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_64/Kth_Smallest_In_Two_Sorted_Arrays.java)
 >
@@ -15,9 +17,9 @@ if (aval < bval) {
 }
 ```
 
-# Problem of Hybrid Data Structure
+## Problem of Hybrid Data Structure
 
-## [LRU(Least Recent Used Cache)](https://app.laicode.io/app/problem/205?plan=3)
+### [LRU(Least Recent Used Cache)](https://app.laicode.io/app/problem/205?plan=3)
 
 Implement a least recently used cache. It should provide set(), get() operations. If not exists, return null (Java),
 
@@ -26,12 +28,12 @@ Implement a least recently used cache. It should provide set(), get() operations
 > - Use a map with doubly linked list
 > - Helper function - append()/remove() only focus on append or remove in map and List
 
-## [First Non-Repeating Character In Stream](https://app.laicode.io/app/problem/288)
+### [First Non-Repeating Character In Stream](https://app.laicode.io/app/problem/288)
 
 > - [SOLUTION](https://github.com/Jianuo-Always-Coding/laicode_solution_java/blob/main/CLASS_NOTE/SOLUTION_64/First_NonRepeating_Character_In_Stream.java)
 > - <mark>一定要注意 append 和 remove 传入的是 Node，不是 char，要对指定的 node 进行删除或者插入</mark>
 
-## [Majority Number I](https://app.laicode.io/app/problem/206?plan=3)
+### [Majority Number I](https://app.laicode.io/app/problem/206?plan=3)
 
 Given an integer array of length L, find the number that occurs more than 0.5 \* L times.
 
