@@ -1,6 +1,12 @@
-1. 如何在一个String中找出最长的回文（palindrome）子串？
-> - 分奇偶中心开花。
-> - 动态规划：
-> 1. isPalindrome[i][j] = isPalindrome[i + 1][j - 1] && s.charAt(i) == s.charAt(j); 并将maxLength = 1;
-> 2. 设置isPalindrome[i][i+1], 如果存在maxLength = 2；
-> 3. i = n - 1; j = i + 2, 从后往前填表
+# 编程注意事项：
+
+1. 第一部分 corner case 考虑
+2. 变量命名有意义
+3. 编码格式注意
+4. 简化重复代码
+5. 函数名字 isBalanced() 这种返回 boolean
+
+# 章节目录
+
+1. 最长回文子串
+2.
